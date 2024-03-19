@@ -216,8 +216,6 @@ for el in tour8:
 
 
 
-
-
 @app.route('/')
 def index():
     return render_template('index.html',
@@ -236,14 +234,13 @@ def departures():
 
 @app.route('/departures/<departure>/')
 def departure(departure):
-    global tours
     tours = dict(filter(lambda tour: tour[1]["departure"] == departure, tourss.items()))
     if tours:
         return render_template('departure.html',
                                departure=departure,
                                title = titles['title'],
                                departures = departuress,
-                               tours = tourss)
+                               tours = tours)
     abort(404)
 @app.route('/tours/')
 def list_tours():

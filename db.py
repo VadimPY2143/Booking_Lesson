@@ -348,4 +348,4 @@ def insert_to_database_tours(title, description, departure, picture, price, star
             print('DB disconnected')
 
 
-insert_to_database_tours("Купель","термальні води","kuiv","https://turua.com.ua/upload/iblock/b6d/b6d7e9601f754931b633b8be6e10afd3.jpg",44000,"4","Велятино",7,"21 січня",)
+insert_to_database_tours("Купель","термальні води","kuiv","https://s4.aconvert.com/convert/p3r68-cdx67/ably4-35un1.jpg",44000,"4","Велятино",7,"21 січня",)
